@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav.show-navbar {
+  left: 0;
+}
+
+@font-face {
+    font-family: 'mainFonts';
+    src: url(/public/Montserrat-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'mainExtrabold';
+    src: url(/public/Montserrat-Black.ttf);
+  }

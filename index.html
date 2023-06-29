@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/letter-b (1).png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BistX</title>
+  </head>
+  <body>
+
+    <div class="bg-green font-mainFonts h-screen ">
+      <div class="flex h-full pb-24 ml-5">
+        <header class="h-full flex flex-col justify-between items-center" >
+          
+          
+          <nav>
+            <div class="w-5 h-5 mt-4" id="burger-button">
+              <button>
+                <img class="object-cover w-full" src="/public/menu-hamburguesa.svg" alt="menuBurger">
+              </button>
+            </div>
+            
+            <div class="w-24">
+              <img class="object-cover w-full" src="/public/letter-b (1).png" alt="L de la WEB">
+            </div>
+    
+            <div id="navbar">
+              <ul class="flex flex-col gap-2 text-lg show-navbar">
+                <li class="flex items-center gap-4">
+                  <img class="w-6" src="/public/busqueda - negro.svg" alt="Lupa">
+                  Search
+                </li>
+                <li class="flex items-center gap-4 w-8">
+                  <img class="w-6" src="/public/corazon_blanco.svg" alt="Favorites">
+                  Favorites
+                </li>
+                <li class="flex items-center gap-4">
+                  <img class="w-6" src="/public/lista-de-musica.svg" alt="Playlist">
+                  Playlist
+                </li>
+              </ul>
+            </div>
+          </nav>    
+                                              
+        </header>
+
+    
+    
+        <main class="flex h-full overflow-hidden w-full">
+          
+          <div class="h-full w-full flex justify-center">
+            <img class="h-full w-820px object-cover" src="/public/taylor.png " alt="">
+          </div>
+    
+          <div class="p-2  h-full font-mainFonts text-white tex-center bg-darkGreen rounded">
+            
+            <!-- list -->
+            <div class="flex justify-between truncate">
+              <ul class="flex justify-start m-10 gap-4 truncate">
+                <li>Songs</li>
+                <li>Artits</li>
+                <li>Albums</li>
+    
+                
+              </ul>          
+              
+              
+              <!-- boton de busqueda -->
+              <div class="">
+      
+                <button class="flex justify-center gap-5 mt-6 mr-5 bg-green p-2 w-[120px] h-[40px] text-left rounded border-spacing-1"> 
+                    Search <img class="" src="/public/busqueda.svg" alt="Lupa">   </button>
+                  
+      
+              </div>  
+
+
+            </div>         
+                        
+            <!-- tarjeta -->
+            
+            <div class="flex-row mx-0 border-b-[1px] border-black ">
+
+    
+              <ul role="list" class="divide-y divide-white dark:divide-white">
+                  <li class="py-3 sm:py-4">
+                      <div class="flex items-center space-x-4">
+                          <div class="flex-shrink-0">
+                              <img class="w-12 h-12 rounded-20" src="/public/unnamed.jpg" alt="Neil image">
+                          </div>
+                          <div class="flex-1 min-w-0">
+                            <p class="text-sm text-black truncate dark:text-black">
+                              Song:
+                            </p>
+                            <p class="text-sm font-medium text-black truncate dark:text-black">
+                                  Artist: Taylor Swift
+                            </p>
+                            <p class="text-sm text-black truncate dark:text-black">
+                                  Album: Desconocido
+                            </p>
+                          </div>
+                          
+                          <div class="grid-rows-2 items-center flex justify-between gap-2  p-2 ">
+                              <img src="/public/corazon_blanco.svg" alt="add Favorites">
+                              <img class="" src="/public/agregar (1).svg" alt="add playlist">
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>  
+    
+          </div>
+    
+    
+    
+        </main>
+      </div>
+
+
+      <footer class="absolute bottom-0 left-0 bg-darkGreen h-24 w-full">
+        <div class="flex justify-between gap-10 items-center m-4 ">
+        
+        
+          <div class="flex justify-start w-full gap-6">
+            
+            <img class=" m-1 w-12 h-12" src="/public/unnamed.jpg" alt="">
+          
+            <div>
+  
+              <p class="text-sm text-black truncate dark:text-black">
+                Song:
+              </p>
+              <p class="text-sm font-medium text-black truncate dark:text-black">
+                    Artist: Taylor Swift
+              </p>
+              <p class="text-sm text-black truncate dark:text-black">
+                    Album: Desconocido
+              </p>           
+            </div> 
+     
+  
+            <div class="flex justify-around gap-6 align-bottom ml-10">
+              <img class="" src="/public/flechas-repetir.svg" alt="Repetir cancion">
+              <img src="/public/angulo-doble-pequeno-izquierdo.svg" alt="Atrasar">
+              <img class="w-[50px] h-[50px]" src="/public/boton-de-play.png" alt="Boton de Play">
+              <img src="/public/angulo-doble-pequeno-derecho.svg" alt="Adelantar">
+              <img src="/public/lista-de-musica.svg" alt="Mostrar Playlist">
+  
+  
+            </div>
+
+            <div class="flex justify-between align-end pl-40 pt-4 m-1 gap-6  ">
+              <div class="w-5">
+                <img class="w-full object-cover" src="/public/volumen (1).svg" alt="">
+              </div>
+              <div class="w-7 pl-1">
+                <img class="w-full object-cover" src="/public/ondas-sonoras.png" alt="">
+              </div>
+            </div>
+  
+            
+  
+          </div>
+
+      </footer>
+
+    </div>
+
+
+  
+    
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
