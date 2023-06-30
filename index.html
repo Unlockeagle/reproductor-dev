@@ -11,7 +11,7 @@
     <div class="bg-green font-mainFonts h-screen ">
       <div class="flex h-full pb-24 ml-5">
         <header class="h-full flex flex-col justify-between items-center" >
-          <nav>
+          <nav id="navbar">
             <div class="w-5 h-5 mt-4" id="burger-button">
               <button>
                 <img class="object-cover w-full" src="/public/menu-hamburguesa.svg" alt="menuBurger">
@@ -22,7 +22,7 @@
               <img class="object-cover w-full" src="/public/letter-b (1).png" alt="L de la WEB">
             </div>
     
-            <div id="navbar">
+            <div >
               <ul class="flex flex-col gap-2 text-lg show-navbar">
                 <li class="flex items-center gap-4">
                   <img class="w-6" src="/public/busqueda - negro.svg" alt="Lupa">
@@ -44,17 +44,17 @@
 
     
     
-        <main class="flex h-full overflow-hidden w-full">
+        <main class="flex h-full w-full justify-between overflow-hidden ">
           
-          <div class="h-full w-full flex justify-center">
+          <div class="h-full flex justify-center w-1/2">
             <img class="h-full w-820px object-cover" src="/public/taylor.png " alt="">
           </div>
     
-          <div class="p-2  h-full font-mainFonts text-white tex-center bg-darkGreen rounded">
+          <div class="font-mainFonts text-white tex-center bg-darkGreen rounded pb-0 overflow-x-hidden">
             
             <!-- list -->
-            <div class="flex justify-between truncate">
-              <ul class="flex justify-start m-10 gap-4 truncate">
+            <div class="flex justify-between truncate w-full">
+              <ul class="w-full flex justify-start m-10 gap-4 truncate">
                 <li>Songs</li>
                 <li>Artits</li>
                 <li>Albums</li>
@@ -77,8 +77,8 @@
                         
             <!-- tarjeta -->
             
-            <div class="flex-row mx-0 border-b-[1px] border-black" id="track_list">   
-              
+            <div class="flex-row mx-0 border-b-[1px] border-black w-10 " id="track_list">   
+          
             </div>  
     
           </div>
@@ -93,25 +93,27 @@
         <div class="flex justify-between gap-10 items-center m-4 ">
         
         
-          <div class="flex justify-start w-full gap-6">
+          <div class="flex justify-start w-full gap-6" id="current">
             
-            <img class=" m-1 w-12 h-12" src="/public/unnamed.jpg" alt="">
-          
-            <div>
-  
+            <!-- <img class=" m-1 w-12 h-12" src="/public/unnamed.jpg" alt="">
+            
+            <div>              
               <p class="text-sm text-black truncate dark:text-black">
                 Song:
               </p>
               <p class="text-sm font-medium text-black truncate dark:text-black">
-                    Artist: Taylor Swift
+                Artist: Taylor Swift
               </p>
               <p class="text-sm text-black truncate dark:text-black">
-                    Album: Desconocido
+                Album: Desconocido
               </p>           
-            </div> 
+            </div>  -->
+            
+
+          </div>
      
   
-            <div class="flex justify-around gap-6 align-bottom ml-10">
+            <!-- <div class="flex justify-around gap-6 align-bottom ml-10">
               <img class="" src="/public/flechas-repetir.svg" alt="Repetir cancion">
               <img src="/public/angulo-doble-pequeno-izquierdo.svg" alt="Atrasar">
               <img class="w-[50px] h-[50px]" src="/public/boton-de-play.png" alt="Boton de Play">
@@ -128,11 +130,10 @@
               <div class="w-7 pl-1">
                 <img class="w-full object-cover" src="/public/ondas-sonoras.png" alt="">
               </div>
-            </div>
+            </div> -->
   
             
   
-          </div>
 
       </footer>
 

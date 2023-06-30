@@ -1,6 +1,6 @@
 import { TSong } from "../services"
 
-type TCardSong = {
+export type TCardSong = {
   data: TSong,
   eventPlay: () => void,
   eventLike: () => void
@@ -13,33 +13,27 @@ export const CardSong = ({
 }: TCardSong) => {
     
   const song = document.createElement('div')
-  song.classList.add('flex-row','mx-0','border-b[1px]','border-black','w-2','p-2' )
+  song.classList.add('flex-row','mx-0','border-b[1px]','border-black','p-2',)
   song.innerHTML = `
-  <ul role="list" class="divide-y divide-white dark:divide-white">
-    <li class="py-3 sm:py-4">
-      <div class="flex items-center space-x-4">
-          <div class="flex-shrink-0">
-              <img class="w-12 h-12 rounded-20" src="/public/unnamed.jpg" alt="Neil image">
-          </div>
-          <div class="flex-1 min-w-0">
-            <p class="text-sm text-black truncate dark:text-black">
-              Song:
-            </p>
-            <p class="text-sm font-medium text-black truncate dark:text-black">
-                  Artist: Taylor Swift
-            </p>
-            <p class="text-sm text-black truncate dark:text-black">
-                  Album: Desconocido
-            </p>
-          </div>
-          
-          <div class="grid-rows-2 items-center flex justify-between gap-2  p-2 ">
-              <img src="/public/corazon_blanco.svg" alt="add Favorites">
-              <img class="" src="/public/agregar (1).svg" alt="add playlist">
-          </div>
-      </div>
-  </li>
-</ul>
+  <div class="flex w-full">
+    <ul role="list" class="divide-y divide-white dark:divide-white ">
+      <li class="py-3 sm:py-4">
+        <div class="flex items-center space-x-4">
+            <div class="flex-shrink-0">
+                <img class="w-[100px] h-[100px] rounded-20" src="${data.path.front}" alt="Neil image">
+            </div>
+            <div class="flex-1 w-20 ">
+              <p class="text-sm text-black truncate dark:text-black font-bold">${data.title}</p>
+              <p class="text-sm font-medium text-black truncate dark:text-black">${data.author}</p>
+              <p class="text-sm text-black truncate dark:text-black">${data.album}</p>
+              <p class="text-sm text-black truncate dark:text-black">${data.duration}</p>
+            </div>
+            
+            
+        </div>
+      </li>
+    </ul>
+</div>
   `;
 
   const buttonsContainer = document.createElement('div')

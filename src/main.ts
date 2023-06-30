@@ -1,20 +1,24 @@
 import { CardSong } from './components/CardSong'
-import { getData } from './services'
+import { TSong, getData } from './services'
 import './style.css'
 
 const track_list = document.getElementById('track_list')
 
 getData(data => {
-  data.map(song => {
+  data.map((song: TSong) => {
     track_list?.appendChild(CardSong({
       data: song,
-      eventPlay: () => console.log('Play'),
+      eventPlay: () => CurrentSong(song),
       eventLike: () => console.log('Like'),
     }))
 
   })
 })
+
+
+
 import { toggLeClass } from './services/index'
+import { CurrentSong } from './components/CurrentSong'
 
 // // window.open(url)
 document.getElementById('burger-button')
