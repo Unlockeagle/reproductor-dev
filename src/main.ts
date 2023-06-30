@@ -23,5 +23,5 @@ import { CurrentSong } from './components/CurrentSong'
 // // window.open(url)
 document.getElementById('burger-button')
     ?.addEventListener('click', () => {
-        toggLeClass(document.getElementById("navbar"), 'show-navbar')
+        toggLeClass(document.getElementById("navbar"))
     })

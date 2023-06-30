@@ -1,4 +1,4 @@
-export const toggLeClass = (elemento: HTMLElement |null, clase: string) => {
+export const toggLeClass = (elemento: HTMLElement |null) => {
 
     // elemento && elemento.classList.toggle(clase)
 
